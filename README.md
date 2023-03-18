@@ -87,8 +87,8 @@ Type=simple
 Restart=on-failure
 ExecStartPre=/bin/sleep 2
 ExecStart=/usr/sbin/murmurd -ini /etc/mumble-server.ini -fg
-User=mumble-server
-Group=mumble-server
+#User=mumble-server
+#Group=mumble-server
 
 [Install]
 WantedBy=multi-user.target

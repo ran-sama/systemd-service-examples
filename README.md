@@ -93,18 +93,18 @@ ExecStart=/usr/sbin/murmurd -ini /etc/mumble-server.ini -fg
 [Install]
 WantedBy=multi-user.target
 ```
-
-Services created this way will be present in this directory:
-```
-/etc/systemd/system
-```
+This server will obey us when we want to restart it after a cert renewal job!
 
 ```
 sudo systemctl enable murmur-new.service
 sudo systemctl start murmur-new.service
 ```
 
-This server will obey us when we want to restart it after a cert renewal job!
+Services created this way will be present in this directory:
+
+```
+/etc/systemd/system
+```
 
 ## Further reading:
 

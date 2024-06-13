@@ -103,7 +103,7 @@ sudo systemctl start murmur-new.service
 Services created this way will be present in this directory:
 
 ```
-/etc/systemd/system
+cd /etc/systemd/system
 ```
 
 ## Further reading:

@@ -61,6 +61,16 @@ sudo systemctl stop fox4.service
 sudo systemctl disable fox4.service
 sudo systemctl reload fox4.service
 ```
+Further useful commands are:
+```
+sudo systemctl daemon-reload
+sudo systemctl list-unit-files
+sudo systemctl list-units --all
+sudo systemctl list-timers --all
+sudo systemctl list-units --type=service
+# explore the dir where the txt files are stored
+cd /etc/systemd/system
+```
 
 ## Special cases like Mumble/Murmurd
 

@@ -4,13 +4,13 @@ Description=fox4-server
 After=network.target
 
 [Service]
+#Environment="OPENSSL_CONF=/home/ran/pyopenssl.cnf"
 Type=idle
 #Type=notify
 Restart=on-failure
 #ExecStartPre=/bin/sleep 10
 ExecStart=/usr/bin/python3 /home/ran/net/server_PV.py
 #WorkingDirectory=/home/pi
-#Environment=PYTHONUNBUFFERED=1
 StandardOutput=null
 StandardError=journal
 User=ran

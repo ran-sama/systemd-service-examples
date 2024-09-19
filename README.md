@@ -111,6 +111,7 @@ Services created this way will be present in this directory:
 
 ```
 cd /etc/systemd/system
+cd /lib/systemd/system
 ```
 
 ## Further reading:

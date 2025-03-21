@@ -86,14 +86,16 @@ sudo systemctl edit --force --full murmur-new.service
 
 ```
 [Unit]
-Description=murmur-server
+Description=murmurd-new
 After=network.target
+Wants=network-online.target
 
 [Service]
+#Environment="OPENSSL_CONF=/home/ran/pyopenssl.cnf"
 Type=simple
 Restart=on-failure
 ExecStartPre=/bin/sleep 2
-ExecStart=/usr/sbin/murmurd -ini /etc/mumble-server.ini -fg
+ExecStart=/usr/bin/mumble-server -ini /etc/mumble/mumble-server.ini -fg
 #User=mumble-server
 #Group=mumble-server
 
